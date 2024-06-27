@@ -119,6 +119,7 @@
   transition-delay: 2.4s;
 }
 
+/* ---------------------------------------------------------- IPHONE RWD ---------------------------------------------------------- */
 @media screen and (max-width: 768px) {
   .title {
     font-size: 2.2rem;
@@ -132,5 +133,22 @@
 
   .subtitle {
     font-size: 1.8rem;
+  }
+}
+
+/* ----------------------------------------------------------- IPAD RWD ----------------------------------------------------------- */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+  .title {
+    font-size: 5rem;
+    -webkit-text-stroke-width: 1px;
+    font-weight: 800;
+  }
+
+  .default {
+    -webkit-text-stroke-width: 0px;
+  }
+
+  .subtitle {
+    font-size: 3rem;
   }
 }
