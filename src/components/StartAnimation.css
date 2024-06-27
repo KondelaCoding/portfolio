@@ -118,3 +118,19 @@
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition-delay: 2.4s;
 }
+
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+    -webkit-text-stroke-width: 1px;
+    font-weight: 600;
+  }
+
+  .default {
+    -webkit-text-stroke-width: 0px;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+  }
+}
