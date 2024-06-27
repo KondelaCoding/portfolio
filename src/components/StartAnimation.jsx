@@ -4,6 +4,8 @@ import "./StartAnimation.css";
 export default function StartAnimation() {
   const [isAnimated, setIsAnimated] = useState(false);
 
+  window.scrollTo(0, 0);
+
   setTimeout(() => {
     setIsAnimated(true);
   }, 500);
