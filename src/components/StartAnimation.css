@@ -1,0 +1,120 @@
+.start-animation {
+  text-align: center;
+  background-color: var(--color-black);
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.overlay-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: var(--color-black);
+  z-index: 3;
+}
+
+.overlay-down {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: var(--color-black);
+  z-index: 3;
+}
+
+.overlay-animate-up {
+  transform: translateX(50%) scaleX(0);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.overlay-animate-down {
+  transform: translateX(50%) scaleX(0);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-delay: 0.5s;
+}
+
+.title {
+  margin: 0;
+  font-size: 7rem;
+  font-weight: 700;
+  width: 100%;
+  text-transform: uppercase;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  font-family: var(--quaternary-font);
+  font-weight: 900;
+  text-transform: uppercase;
+  -webkit-text-stroke: 3px white;
+}
+
+.default {
+  z-index: 2;
+}
+
+.purple {
+  color: var(--secondary-color);
+  -webkit-text-stroke: 3px var(--secondary-color);
+}
+
+.subtitle {
+  font-family: var(--primary-font);
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 4rem;
+  margin: 0;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 30%);
+}
+
+.animate-up,
+.animate-up span,
+.animate-down,
+.animate-down span {
+  -webkit-text-stroke: 3px white;
+  color: var(--color-black);
+  paint-order: stroke fill;
+  z-index: 0;
+}
+
+.animate-up span,
+.animate-down span {
+  -webkit-text-stroke-color: var(--secondary-color);
+}
+
+.animate-up {
+  transform: translate(-50%, -215%);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-delay: 1s;
+}
+
+.animate-down {
+  transform: translate(-50%, -85%);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-delay: 1s;
+}
+
+.before-page {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  background-color: var(--secondary-color);
+  filter: grayscale(50%);
+}
+
+.animate-before-page {
+  transform: translateY(-100%);
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition-delay: 2.4s;
+}

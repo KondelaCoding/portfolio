@@ -3,7 +3,6 @@
   --color-darkgray: #666666;
   --color-gray: #818181;
   --color-lightgray: #bfbfbf;
-  --color-white: #ffffff;
   --color-purple: #502785;
   --color-indygo: #5e4cb2;
 
@@ -15,6 +14,7 @@
   --primary-font: "aqua", sans-serif;
   --secondary-font: "lobster", sans-serif;
   --tertiary-font: "poppins", sans-serif;
+  --quaternary-font: "outfit", sans-serif;
 
   --primary-gradient: linear-gradient(90deg, var(--color-purple) 0%, var(--color-indygo) 100%);
 
@@ -41,4 +41,16 @@
 @font-face {
   font-family: "poppins";
   src: url("./assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sequel";
+  src: url("./assets/fonts/Sequel_Demo.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
 }

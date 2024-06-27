@@ -1,16 +1,47 @@
 import { Outlet, Link } from "react-router-dom";
+import "./Home.css";
+import StartAnimation from "../components/StartAnimation";
+import { useState } from "react";
 
 const Home = () => {
+  const [isAnimated, setIsAnimated] = useState(false);
+  const [isAnimationLoaded, setIsAnimationLoaded] = useState(true);
+
+  setTimeout(() => {
+    setIsAnimated(true);
+  }, 500);
+
+  setTimeout(() => {
+    document.body.style.overflowY = "auto";
+    setIsAnimationLoaded(false);
+  }, 4000);
+
   return (
     <>
-      <h1>Welcome to My Portfolio</h1>
-      <p>This is the homepage of my portfolio website.</p>
-      <ul>
-        <Link to="/">HOME</Link>
-        <Link to="/about">ABOUT</Link>
-      </ul>
-      <button className="btn">Contact</button>
-
+      {isAnimationLoaded && <StartAnimation />}
+      <div className={`propper-page ${isAnimated ? "animate-page" : ""}`}>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+        <h1>HOMEPAGE</h1>
+      </div>
       <Outlet />
     </>
   );
