@@ -11,10 +11,10 @@
 
   --primary-text: var(--color-black);
 
-  --primary-font: "aqua", sans-serif;
-  --secondary-font: "lobster", sans-serif;
-  --tertiary-font: "poppins", sans-serif;
-  --quaternary-font: "outfit", sans-serif;
+  --primary-font: "aqua", sans-serif; /* Titles */
+  --secondary-font: "lobster", sans-serif; /* Decorative */
+  --tertiary-font: "poppins", sans-serif; /* Do not use */
+  --quaternary-font: "outfit", sans-serif; /* Menu, subtitles */
 
   --primary-gradient: linear-gradient(90deg, var(--color-purple) 0%, var(--color-indygo) 100%);
 

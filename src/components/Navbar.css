@@ -1,0 +1,83 @@
+nav {
+  position: fixed;
+  width: 150px;
+  height: 100vh;
+  background-color: var(--color-black);
+  color: white;
+  z-index: 100;
+  transform: translateX(-150px);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.visible {
+  transform: translateX(0);
+  transition: 1s cubic-bezier(0.3, 0.58, 0.26, 1);
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 40px;
+  backdrop-filter: brightness(200%);
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-family: var(--quaternary-font);
+  gap: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+  user-select: none;
+}
+
+.back-btn p {
+  margin: 0;
+}
+
+.inactive {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.active:hover {
+  background-color: var(--color-purple);
+}
+
+.active:hover .arrow {
+  transform: translateX(-5px);
+  transition: 0.2s;
+}
+
+.arrow {
+  transition: 0.2s;
+}
+
+.active:active {
+  transform: scale(0.9);
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+/* ---------------------------------------------------------- IPHONE RWD ---------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  nav {
+    background: transparent;
+  }
+
+  .back-btn {
+    background-color: var(--color-black);
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+  }
+
+  .back-btn p {
+    display: none;
+  }
+}
+
+/* ----------------------------------------------------------- IPAD RWD ----------------------------------------------------------- */
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+}

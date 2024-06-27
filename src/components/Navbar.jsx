@@ -1,20 +1,24 @@
+import "./Navbar.css";
+import { ArrowLeft } from "react-feather";
+import { useState } from "react";
+import { useLocation } from "react-router";
+
 const Navbar = () => {
+  const [isEntry, setIsEntry] = useState(false);
+  const location = useLocation();
+
+  setTimeout(() => {
+    setIsEntry(true);
+  }, 3500);
+
   return (
-    <nav>
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-        <li>
-          <a href="#">About</a>
-        </li>
-        <li>
-          <a href="#">Services</a>
-        </li>
-        <li>
-          <a href="#">Contact</a>
-        </li>
-      </ul>
+    <nav className={isEntry ? "visible" : ""}>
+      <div>
+        <div className={`back-btn ${location.pathname === "/" ? "inactive" : "active"}`}>
+          <ArrowLeft className="arrow" />
+          <p>back</p>
+        </div>
+      </div>
     </nav>
   );
 };
