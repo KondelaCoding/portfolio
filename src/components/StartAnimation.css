@@ -138,7 +138,7 @@
 }
 
 /* ----------------------------------------------------------- IPAD RWD ----------------------------------------------------------- */
-@media screen and (max-width: 1024px) and (min-width: 768px) {
+@media screen and (max-width: 1194px) and (min-width: 768px) {
   .title {
     font-size: 5rem;
     -webkit-text-stroke-width: 1px;
