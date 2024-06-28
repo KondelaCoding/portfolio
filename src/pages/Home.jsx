@@ -23,7 +23,7 @@ const Home = () => {
     <>
       <Navbar />
       {isAnimationLoaded && <StartAnimation />}
-      <div className={`propper-page ${isAnimated ? "animate-page" : ""}`}>
+      <div className={`page ${isAnimated ? "animate-entry" : ""}`}>
         <h1>HOMEPAGE</h1>
         <h1>HOMEPAGE</h1>
         <h1>HOMEPAGE</h1>
