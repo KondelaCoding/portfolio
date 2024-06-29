@@ -1,17 +1,16 @@
-import { Outlet } from "react-router-dom";
-// Add Link for navigation
+// Add Link and Outlet for navigation
 import "./Home.css";
 import StartAnimation from "../components/StartAnimation";
 import { useState } from "react";
 import Navbar from "../components/Navbar";
-import { Circle } from "react-feather";
+import Hero from "../components/Hero";
 
 const Home = () => {
-  const [isAnimated, setIsAnimated] = useState(false);
+  const [isEntyAnimated, setIsEntyAnimated] = useState(false);
   const [isAnimationLoaded, setIsAnimationLoaded] = useState(true);
 
   setTimeout(() => {
-    setIsAnimated(true);
+    setIsEntyAnimated(true);
   }, 500);
 
   setTimeout(() => {
@@ -23,31 +22,49 @@ const Home = () => {
     <>
       <Navbar />
       {isAnimationLoaded && <StartAnimation />}
-      <div className={`page ${isAnimated ? "animate-entry" : ""}`}>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <h1>HOMEPAGE</h1>
-        <Circle />
+      <div className={`container ${isEntyAnimated ? "animate-entry" : ""}`}>
+        <div className="page">
+          <Hero />
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+          <h1>HOME</h1>
+        </div>
       </div>
-      <Outlet />
     </>
   );
 };
