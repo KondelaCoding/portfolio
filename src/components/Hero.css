@@ -60,7 +60,8 @@
 
 .hero .header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 50px;
 }
 
 .hero .header-box {
@@ -145,17 +146,21 @@
 }
 
 /* ---------------------------------------------------------- IPHONE RWD ---------------------------------------------------------- */
-@media screen and (max-width: 834px) {
+@media screen and (max-width: 768px) {
   .hero .swiper {
     display: none;
   }
   .hero .header-box {
     display: none;
   }
+
+  .hero .photo {
+    max-width: 90vw;
+  }
 }
 
 /* ----------------------------------------------------------- IPAD RWD ----------------------------------------------------------- */
-@media screen and (max-width: 1194px) and (min-width: 834px) {
+@media screen and (max-width: 1194px) and (min-width: 768px) {
   .hero .header-box {
     height: 1000px;
     width: 300px;
@@ -177,6 +182,10 @@
 
   .hero .swiper {
     display: none;
+  }
+
+  .hero .header {
+    padding: 0 20px;
   }
 }
 
