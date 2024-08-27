@@ -1,4 +1,4 @@
-.swiper {
+.hero .swiper {
   font-size: 4rem;
   font-family: var(--quaternary-font);
   line-height: 1rem;
@@ -9,14 +9,14 @@
   z-index: 1;
 }
 
-.swiper-up {
+.hero .swiper-up {
   position: absolute;
   top: 0;
   left: 0;
   animation: slide 100s linear infinite;
 }
 
-.swiper-down {
+.hero .swiper-down {
   position: absolute;
   left: -49%;
   top: 100px;
@@ -24,13 +24,13 @@
   animation-direction: reverse;
 }
 
-.shadow-effect {
+.hero .shadow-effect {
   transition: 0.5s cubic-bezier(0.17, 0.67, 0, 1.03);
   cursor: default;
   text-shadow: 0px 0px 0px rgba(255, 0, 0, 0.5), 0px 0px 0px rgba(0, 0, 255, 0.5);
 }
 
-.shadow-effect:hover {
+.hero .shadow-effect:hover {
   text-shadow: 8px 8px 0px rgba(255, 0, 0, 0.5), -8px -8px 0px rgba(0, 0, 255, 0.5);
 }
 
@@ -43,7 +43,7 @@
   }
 }
 
-.header-box {
+.hero .header-box {
   backdrop-filter: invert(96%) sepia(7%) saturate(42%) hue-rotate(314deg) brightness(95%) contrast(92%);
   z-index: 10;
   height: 1200px;
@@ -56,7 +56,7 @@
   align-items: center;
 }
 
-.header-box .about {
+.hero .header-box .about {
   font-size: 6rem;
   font-family: "outfit", sans-serif;
   font-weight: 200;
@@ -70,7 +70,7 @@
   z-index: 1;
 }
 
-.header-box button {
+.hero .header-box button {
   font-size: 2rem;
   font-family: var(--quaternary-font);
   font-weight: 200;
@@ -84,13 +84,13 @@
   width: 200px;
 }
 
-.header-box button:hover {
+.hero .header-box button:hover {
   background-color: white;
   color: black;
   width: 100%;
 }
 
-.name {
+.hero .name {
   font-size: 3rem;
   font-family: "outfit", sans-serif;
   color: white;
@@ -105,76 +105,76 @@
   cursor: default;
 }
 
-.mikolaj:hover {
+.hero .mikolaj:hover {
   letter-spacing: 14px;
 }
 
-.kondela:hover {
+.hero .kondela:hover {
   letter-spacing: 5px;
 }
 
-.mikolaj {
+.hero .mikolaj {
   letter-spacing: 4px;
   font-weight: 100;
   margin-bottom: 0;
   transition: 0.5s cubic-bezier(0.17, 0.67, 0, 1.03);
 }
 
-.kondela {
+.hero .kondela {
   transition: 0.5s cubic-bezier(0.17, 0.67, 0, 1.03);
 }
 
 /* ---------------------------------------------------------- IPHONE RWD ---------------------------------------------------------- */
 @media screen and (max-width: 834px) {
-  .swiper {
+  .hero .swiper {
     display: none;
   }
-  .header-box {
+  .hero .header-box {
     display: none;
   }
 }
 
 /* ----------------------------------------------------------- IPAD RWD ----------------------------------------------------------- */
 @media screen and (max-width: 1194px) and (min-width: 834px) {
-  .header-box {
+  .hero .header-box {
     height: 1000px;
     width: 300px;
     right: 50px;
   }
 
-  .header-box .about {
+  .hero .header-box .about {
     top: 895px;
     left: 0;
   }
 
-  .name {
+  .hero .name {
     margin-top: -100px;
     font-size: 2rem;
   }
 
-  .mikolaj {
+  .hero .mikolaj {
     letter-spacing: 1px;
   }
 
-  .swiper {
+  .hero .swiper {
     display: none;
   }
 }
 
 /* ------------------------------------------------------------ 2K RWD ------------------------------------------------------------ */
 @media screen and (min-width: 1921px) {
-  .header-box {
+  .hero .header-box {
     height: 1400px;
     width: 700px;
     right: 200px;
   }
 
-  .header-box .about {
+  .hero .header-box .about {
     top: 1295px;
     left: -200px;
   }
 
-  .name {
+  .hero .name {
     margin-top: 100px;
     font-size: 4rem;
   }

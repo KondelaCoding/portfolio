@@ -51,7 +51,7 @@ const Navbar = () => {
   window.addEventListener("scroll", calculateSection);
 
   return (
-    <nav className={isEntry ? "visible" : ""}>
+    <nav className={`nav ${isEntry ? "visible-nav" : ""}`}>
       <div className="desktop-nav">
         <div className="nav-btn menu" onClick={openMenu}>
           <Menu className="menu-icon"></Menu>
