@@ -26,10 +26,10 @@ export default function Hero() {
           <span className="shadow-effect">&nbsp;FRONTEND</span> <span className="shadow-effect">&nbsp;DEVELOPER</span>
         </h1>
         <h1 className="swiper-down">
-          <span className="shadow-effect">&nbsp;FRONTEND</span> <span className="shadow-effect">&nbsp;DEVELOPER</span>
-          <span className="shadow-effect">&nbsp;FRONTEND</span> <span className="shadow-effect">&nbsp;DEVELOPER</span>
-          <span className="shadow-effect">&nbsp;FRONTEND</span> <span className="shadow-effect">&nbsp;DEVELOPER</span>
-          <span className="shadow-effect">&nbsp;FRONTEND</span> <span className="shadow-effect">&nbsp;DEVELOPER</span>
+          <span className="shadow-effect">&nbsp;VISUAL</span> <span className="shadow-effect">&nbsp;DESIGNER</span>
+          <span className="shadow-effect">&nbsp;VISUAL</span> <span className="shadow-effect">&nbsp;DESIGNER</span>
+          <span className="shadow-effect">&nbsp;VISUAL</span> <span className="shadow-effect">&nbsp;DESIGNER</span>
+          <span className="shadow-effect">&nbsp;VISUAL</span> <span className="shadow-effect">&nbsp;DESIGNER</span>
         </h1>
       </div>
     </div>
