@@ -55,3 +55,8 @@ body {
   overflow: hidden;
   overflow-x: hidden;
 }
+
+.decorative-font {
+  font-family: var(--secondary-font);
+  letter-spacing: 2px;
+}

@@ -4,6 +4,7 @@ import StartAnimation from "../components/StartAnimation";
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+import About from "../components/About";
 
 const Home = () => {
   const [isEntyAnimated, setIsEntyAnimated] = useState(false);
@@ -19,15 +20,16 @@ const Home = () => {
   }, 4000);
 
   return (
-    <>
+    <div className="home">
       <Navbar />
       {isAnimationLoaded && <StartAnimation />}
-      <div className={`container ${isEntyAnimated ? "animate-entry" : ""}`}>
+      <div className={`container-home ${isEntyAnimated ? "animate-entry" : ""}`}>
         <div className="page">
           <Hero />
+          <About />
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

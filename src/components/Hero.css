@@ -61,7 +61,7 @@
 .hero .header {
   display: flex;
   justify-content: space-between;
-  padding: 0 50px;
+  padding: 0 80px;
 }
 
 .hero .header-box {
@@ -150,6 +150,12 @@
   .hero .swiper {
     display: none;
   }
+
+  .hero .header {
+    padding: 0 10px;
+    justify-content: center;
+  }
+
   .hero .header-box {
     display: none;
   }
@@ -162,12 +168,12 @@
 /* ----------------------------------------------------------- IPAD RWD ----------------------------------------------------------- */
 @media screen and (max-width: 1194px) and (min-width: 768px) {
   .hero .header-box {
-    height: 1000px;
+    height: 800px;
     width: 300px;
   }
 
   .hero .header-box .about {
-    top: 895px;
+    top: 695px;
     left: 0;
   }
 
@@ -186,6 +192,10 @@
 
   .hero .header {
     padding: 0 20px;
+  }
+
+  .hero .photo {
+    max-width: 45vw;
   }
 }
 

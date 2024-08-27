@@ -1,4 +1,4 @@
-.container {
+.home .container-home {
   position: absolute;
   top: 100%;
   left: 0;
@@ -8,27 +8,27 @@
   background-color: white;
 }
 
-.animate-entry {
+.home .animate-entry {
   transform: translateY(-100%);
   transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition-delay: 2.5s;
 }
 
-.page {
+.home .page {
   margin-left: 150px;
   overflow: hidden;
 }
 
 /* ---------------------------------------------------------- IPHONE RWD ---------------------------------------------------------- */
 @media screen and (max-width: 768px) {
-  .page {
+  .home .page {
     margin-left: 0;
   }
 }
 
 /* ----------------------------------------------------------- IPAD RWD ----------------------------------------------------------- */
 @media screen and (max-width: 1194px) and (min-width: 768px) {
-  .page {
+  .home .page {
     margin-left: 80px;
   }
 }
