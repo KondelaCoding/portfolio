@@ -25,44 +25,6 @@ const Home = () => {
       <div className={`container ${isEntyAnimated ? "animate-entry" : ""}`}>
         <div className="page">
           <Hero />
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
-          <h1>HOME</h1>
         </div>
       </div>
     </>
