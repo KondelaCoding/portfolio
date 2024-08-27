@@ -80,6 +80,9 @@ const Navbar = () => {
         </div>
         <div className={`section-animation ${isSectionChanged ? "section-changed" : ""}`}></div>
       </div>
+      <div className="nav-btn menu" onClick={openMenu}>
+        <Menu className="menu-icon"></Menu>
+      </div>
       <div className={`mobile-nav ${isMenuOpen ? "open" : ""}`}>
         <div className="mobile-menu">
           <h1>Hero</h1>
@@ -93,3 +96,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+//TODO Restructure Navbar to work better with RWD, it will make the code cleaner and more readable
