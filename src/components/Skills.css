@@ -1,0 +1,17 @@
+.skills {
+  margin: 80px;
+}
+
+.skills .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin: 0 auto;
+}
+
+.skills .card {
+  width: 300px;
+  height: 300px;
+  border: 2px solid var(--primary-text);
+}

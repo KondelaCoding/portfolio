@@ -5,6 +5,7 @@ import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "../components/About";
+import Skills from "../components/Skills";
 
 const Home = () => {
   const [isEntyAnimated, setIsEntyAnimated] = useState(false);
@@ -27,6 +28,7 @@ const Home = () => {
         <div className="page">
           <Hero />
           <About />
+          <Skills />
         </div>
       </div>
     </div>
