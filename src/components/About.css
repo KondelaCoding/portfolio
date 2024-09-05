@@ -124,6 +124,13 @@
   transform: translateX(0);
 }
 
+.about .animate-about {
+  color: red;
+}
+
+@keyframes about-transition {
+}
+
 /* ---------------------------------------------------------- IPHONE RWD ---------------------------------------------------------- */
 @media screen and (max-width: 768px) {
   .about .container {
