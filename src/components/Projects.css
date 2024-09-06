@@ -1,0 +1,226 @@
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.projects .container {
+  margin: 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.projects .title-container {
+  backdrop-filter: invert(96%) sepia(7%) saturate(42%) hue-rotate(314deg) brightness(95%) contrast(92%);
+  height: 400px;
+  width: 500px;
+  min-width: 500px;
+  position: relative;
+  margin: 100px 80px 0 80px;
+  padding: 0;
+  z-index: 10;
+}
+
+.projects .title-arrow {
+  position: absolute;
+  right: -70px;
+  top: -70px;
+  margin: 0;
+}
+
+.projects .title-container h1 {
+  font-size: 6rem;
+  font-family: "outfit", sans-serif;
+  font-weight: 200;
+  color: white;
+  line-height: 1rem;
+  text-wrap: nowrap;
+  letter-spacing: -5px;
+  position: absolute;
+  z-index: 1;
+  text-transform: uppercase;
+  bottom: 27px;
+  left: 0;
+  margin: 0;
+}
+
+.projects .content {
+  width: 60%;
+  text-align: justify;
+}
+
+.projects .content .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.projects .content h1 {
+  text-transform: uppercase;
+  letter-spacing: -3px;
+  font-size: 4.5rem;
+  margin: 0;
+}
+
+.projects .menu-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.projects .learn-more {
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: end;
+  width: fit-content;
+  text-transform: capitalize;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  transition: 0.3s cubic-bezier(0.3, 0.58, 0.26, 1);
+  cursor: pointer;
+}
+
+.projects .learn-more:hover {
+  text-underline-offset: 10px;
+}
+
+.projects .learn-more-mobile {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  justify-content: end;
+  width: 100%;
+  text-transform: capitalize;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.projects .menu {
+  border: 1px solid var(--primary-text);
+  overflow: hidden;
+  height: fit-content;
+}
+
+.projects .menu-fragment {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  width: 500px;
+  border: 1px solid var(--primary-text);
+  padding: 10px 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.projects .menu-fragment:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 0%;
+  left: 0;
+  backdrop-filter: invert(96%) sepia(7%) saturate(42%) hue-rotate(314deg) brightness(95%) contrast(92%);
+  transition: 0.5s cubic-bezier(0.3, 0.58, 0.26, 1);
+}
+
+.projects .active-section:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  backdrop-filter: invert(96%) sepia(7%) saturate(42%) hue-rotate(314deg) brightness(95%) contrast(92%);
+  transition: 0.5s cubic-bezier(0.3, 0.58, 0.26, 1);
+}
+
+.projects .menu-fragment:hover:after {
+  width: 100%;
+}
+
+.projects .menu-fragment p {
+  margin: 0;
+  transition: 0.3s cubic-bezier(0.3, 0.58, 0.26, 1);
+}
+
+.projects .active-section p {
+  transform: translateX(10px);
+}
+
+.projects .arrow {
+  transform: translateX(-50px);
+  transition: 0.3s cubic-bezier(0.3, 0.58, 0.26, 1);
+}
+
+.projects .active-section .arrow {
+  transform: translateX(0);
+}
+
+/* placeholder for transitions in projects section */
+.projects .animate-projects {
+  color: red;
+}
+
+@keyframes projects-transition {
+}
+
+/* ---------------------------------------------------------- IPHONE RWD ---------------------------------------------------------- */
+@media screen and (max-width: 767px) {
+  .projects .container {
+    margin: 80px 20px;
+    flex-direction: column-reverse;
+    gap: 24px;
+  }
+
+  .projects .menu-wrapper {
+    width: 100%;
+  }
+
+  .projects .menu {
+    width: 100%;
+  }
+
+  .projects .menu-fragment {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .projects .content h1 {
+    font-size: 2.5rem;
+  }
+
+  .projects .content {
+    width: 100%;
+  }
+
+  .projects .learn-more {
+    display: none;
+  }
+
+  .projects .learn-more-mobile {
+    display: flex;
+  }
+}
+
+/* ----------------------------------------------------------- IPAD RWD ----------------------------------------------------------- */
+@media screen and (max-width: 1194px) and (min-width: 768px) {
+  .projects .container {
+    margin: 80px 20px;
+  }
+
+  .projects .menu-fragment {
+    width: 300px;
+  }
+
+  .projects .content h1 {
+    font-size: 2.5rem;
+  }
+}
