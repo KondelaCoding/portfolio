@@ -133,7 +133,7 @@
 }
 
 /* ---------------------------------------------------------- IPHONE RWD ---------------------------------------------------------- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .about .container {
     margin: 80px 20px;
     flex-direction: column-reverse;

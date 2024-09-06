@@ -125,7 +125,7 @@
 }
 
 /* ---------------------------------------------------------- IPHONE RWD ---------------------------------------------------------- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .start-animation .title {
     font-size: 2.2rem;
     -webkit-text-stroke-width: 1px;
