@@ -120,10 +120,11 @@
   transition: 0.3s cubic-bezier(0.3, 0.58, 0.26, 1);
 }
 
-.about .active-arrow {
+.about .active-section .arrow {
   transform: translateX(0);
 }
 
+/* placeholder for transitions in about section */
 .about .animate-about {
   color: red;
 }
@@ -183,5 +184,3 @@
     font-size: 2.5rem;
   }
 }
-
-/* TODO make the menu-fragment width responsive to the header-box in hero section */

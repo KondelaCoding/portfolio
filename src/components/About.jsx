@@ -84,28 +84,28 @@ export default function About() {
               className={`menu-fragment ${activeSection === "bio" ? "active-section" : ""}`}
               onClick={() => handleMenuClick("bio")}
             >
-              <ArrowRight className={`arrow ${activeSection === "bio" ? "active-arrow" : ""}`} />
+              <ArrowRight className="arrow" />
               <p>bio</p>
             </div>
             <div
               className={`menu-fragment ${activeSection === "career" ? "active-section" : ""}`}
               onClick={() => handleMenuClick("career")}
             >
-              <ArrowRight className={`arrow ${activeSection === "career" ? "active-arrow" : ""}`} />
+              <ArrowRight className="arrow" />
               <p>career</p>
             </div>
             <div
               className={`menu-fragment ${activeSection === "personal life" ? "active-section" : ""}`}
               onClick={() => handleMenuClick("personal life")}
             >
-              <ArrowRight className={`arrow ${activeSection === "personal life" ? "active-arrow" : ""}`} />
+              <ArrowRight className="arrow" />
               <p>personal life</p>
             </div>
             <div
               className={`menu-fragment ${activeSection === "achievements" ? "active-section" : ""}`}
               onClick={() => handleMenuClick("achievements")}
             >
-              <ArrowRight className={`arrow ${activeSection === "achievements" ? "active-arrow" : ""}`} />
+              <ArrowRight className="arrow" />
               <p>achievements</p>
             </div>
           </div>
@@ -123,5 +123,3 @@ export default function About() {
     </div>
   );
 }
-
-//TODO Delete turnary operators in ArrowRight and use .active-section .arrow instead of making another class
